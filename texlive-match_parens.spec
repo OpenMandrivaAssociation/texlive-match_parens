@@ -1,3 +1,9 @@
+# revision 23500
+# category Package
+# catalog-ctan /support/match_parens
+# catalog-date 2011-07-31 15:37:23 +0200
+# catalog-license gpl
+# catalog-version 1.3
 Name:		texlive-match_parens
 Version:	1.3
 Release:	1
@@ -50,6 +56,7 @@ mismatches.
 %doc %{_texmfdistdir}/doc/support/match_parens/index.html
 %doc %{_texmfdistdir}/doc/support/match_parens/match_parens.html
 %doc %{_texmfdistdir}/doc/support/match_parens/rdoc-style.css
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -64,3 +71,5 @@ pushd %{buildroot}%{_bindir}
 popd
 mkdir -p %{buildroot}%{_datadir}
 cp -fpar texmf-dist %{buildroot}%{_datadir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
