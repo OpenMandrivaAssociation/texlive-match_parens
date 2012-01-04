@@ -6,7 +6,7 @@
 # catalog-version 1.3
 Name:		texlive-match_parens
 Version:	1.3
-Release:	1
+Release:	2
 Summary:	Easily detect mismatched parens
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/support/match_parens
