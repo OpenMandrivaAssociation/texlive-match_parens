@@ -1,12 +1,12 @@
-# revision 25447
+# revision 26313
 # category Package
 # catalog-ctan /support/match_parens
-# catalog-date 2012-02-20 19:00:55 +0100
+# catalog-date 2012-04-05 17:28:29 +0200
 # catalog-license gpl
 # catalog-version 1.4
 Name:		texlive-match_parens
 Version:	1.4
-Release:	1
+Release:	2
 Summary:	Easily detect mismatched parens
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/support/match_parens
