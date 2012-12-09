@@ -89,3 +89,25 @@ pushd %{buildroot}%{_bindir}
 popd
 mkdir -p %{buildroot}%{_datadir}
 cp -fpar texmf-dist %{buildroot}%{_datadir}
+
+
+%changelog
+* Wed Aug 08 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.4-2
++ Revision: 812573
+- Update to latest release.
+
+* Thu Feb 23 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.4-1
++ Revision: 779616
+- Update to latest release.
+
+* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.3-2
++ Revision: 753768
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.3-1
++ Revision: 718958
+- texlive-match_parens
+- texlive-match_parens
+- texlive-match_parens
+- texlive-match_parens
+
