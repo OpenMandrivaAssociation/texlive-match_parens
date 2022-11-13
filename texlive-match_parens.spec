@@ -1,18 +1,12 @@
-# revision 33682
-# category Package
-# catalog-ctan /support/match_parens
-# catalog-date 2012-04-05 17:28:29 +0200
-# catalog-license gpl
-# catalog-version 1.4
 Name:		texlive-match_parens
-Version:	1.43
-Release:	2
+Version:	36270
+Release:	1
 Summary:	Easily detect mismatched parens
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/support/match_parens
 License:	GPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/match_parens.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/match_parens.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/match_parens.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/match_parens.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -28,12 +22,12 @@ will normally be almost empty, but will clearly show any
 mismatches.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -44,14 +38,14 @@ mismatches.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_bindir}
 pushd %{buildroot}%{_bindir}
-    ln -sf %{_texmfdistdir}/scripts/match_parens/match_parens match_parens
+ln -sf %{_texmfdistdir}/scripts/match_parens/match_parens match_parens
 popd
 mkdir -p %{buildroot}%{_datadir}
 cp -fpar texmf-dist %{buildroot}%{_datadir}
