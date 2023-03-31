@@ -1,6 +1,6 @@
 Name:		texlive-match_parens
 Version:	36270
-Release:	1
+Release:	2
 Summary:	Easily detect mismatched parens
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/support/match_parens
