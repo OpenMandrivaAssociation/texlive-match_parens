@@ -3,7 +3,7 @@ Version:	36270
 Release:	2
 Summary:	Easily detect mismatched parens
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/support/match_parens
+URL:		https://www.ctan.org/tex-archive/support/match_parens
 License:	GPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/match_parens.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/match_parens.doc.r%{version}.tar.xz
